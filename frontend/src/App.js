@@ -62,4 +62,14 @@ const router = createBrowserRouter([
       {
         path: 'newsletter',
         element: <NewsletterPage />,
-        ac
+        action: newsletterAction,
+      },
+    ],
+  },
+]);
+
+function App() {
+  return <RouterProvider router={router} />;
+}
+
+export default App;
